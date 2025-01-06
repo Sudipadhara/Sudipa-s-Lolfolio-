@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudipa's LOLfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fce38a, #f38181, #a8edea, #fed6e3);
+      background-size: 300% 300%;
+      animation: gradientShift 10s ease infinite;
+      color: #1c1c1c;
+      margin: 0;
+      padding: 0;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 50px;
+      background: linear-gradient(135deg, #6a0572, #a603bf);
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-family: 'Pacifico', cursive;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+
+    section {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .about p {
+      font-size: 1.2rem;
+      color: #333;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .skills h2, .memes h2, .suggestions h2 {
+      font-size: 2.2rem;
+      color: #5e42a6;
+      margin-bottom: 20px;
+    }
+
+    .skills-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #ffdde1, #c6b9e8);
+      border-radius: 15px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+      color: #1c1c1c;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .meme-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .meme {
+      background: #f9f4f0;
+      border: 2px dashed #a603bf;
+      border-radius: 10px;
+      padding: 15px;
+      font-weight: bold;
+      color: #1c1c1c;
+      text-align: center;
+      width: 300px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .meme img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .meme:hover {
+      transform: scale(1.05);
+    }
+
+    .suggestions {
+      background: linear-gradient(135deg, #fef3c7, #ffe8e7);
+      padding: 30px;
+      text-align: center;
+    }
+
+    .suggestions form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .suggestions input, .suggestions textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .suggestions button {
+      background: #a603bf;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .suggestions button:hover {
+      background: #9a02ae;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #9cecfb, #65c7f7);
+      color: #fff;
+    }
+
+    footer a {
+      color: #f38181;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sudipa's LOLfolio 🎉</h1>
+    <p>Your daily dose of memes and creativity, blended with tech magic!</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Sudipa – a web developer, meme enthusiast, and self-proclaimed bug whisperer. 
+      When I'm not debugging code, I'm busy creating the next viral meme or sprinkling fun into projects.
+    </p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills That Make Me Awesome</h2>
+    <div class="skills-grid">
+      <div class="card">
+        <h3>HTML & CSS</h3>
+        <p>Coding pages that are as smooth as butter and colorful as a rainbow.</p>
+      </div>
+      <div class="card">
+        <h3>JavaScript</h3>
+        <p>Bringing logic and life to the party (a.k.a. your web apps).</p>
+      </div>
+      <div class="card">
+        <h3>Meme Creation</h3>
+        <p>Turning life struggles into laugh-out-loud moments!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="memes">
+    <h2>Memes That Define My Life</h2>
+    <div class="meme-container">
+      <div class="meme">
+        <img src="https://programmerhumor.io/wp-content/uploads/2023/02/programmerhumor-io-programming-memes-9fc453065de30cd.jpg" alt="Syntax Meme">
+        <p>"Why did the programmer quit their job? Because they didn't get arrays (a raise)." 😂</p>
+      </div>
+      <div class="meme">
+        <img src="https://am-graphix.com/images/blog/bug-feature.jpg" alt="Bug Fix Meme">
+        <p>"I fixed the bug... but now it's an undocumented feature!" 🤦‍♀</p>
+      </div>
+      <div class="meme">
+        <img src="https://i.imgflip.com/7lf5it.jpg" alt="Code Error Meme">
+        <p>"When you finally find the solution to a bug after hours of debuggingg.😮‍💨"</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="suggestions">
+    <h2>Suggest Your Meme</h2>
+    <p>Got a funny idea? Share it with me, and it might make it to my LOLfolio!</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <textarea placeholder="Your Meme Suggestion" rows="4" required></textarea>
+      <button type="submit">Submit Meme</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Want to collaborate or just laugh? <a href="mailto:sudipa@example.com">Contact me!</a></p>
+    <p>© 2025 Sudipa's LOLfolio. All rights reserved. 😎</p>
+  </footer>
+</body>
+</html>
